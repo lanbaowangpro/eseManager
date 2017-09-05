@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <Button
+        android:id="@+id/startBinding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="startBinding"
+        android:text="@string/startBinding"
+        android:textAllCaps="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/clearBindingInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clearBindingInfo"
+        android:text="@string/clearBindingInfo"
+        android:textAllCaps="false"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/startBinding"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:id="@+id/textviewID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:text="@string/hello_world"
+        android:layout_below="@+id/clearBindingInfo" />
+
+</RelativeLayout>
